@@ -95,7 +95,7 @@ After deployment, test:
 
 ## 📱 Features Working on Vercel:
 - 🤖 **NVIDIA API Integration** (5 models)
-- 🔍 **Google Search Tool** 
+- 🔍 **Google Search Tool**
 - 💻 **JavaScript Execution**
 - 🧠 **AI Pipe Processing**
 - 🎨 **Modern UI with Dark/Light Theme**
