@@ -16,10 +16,10 @@
 <body>
     <div class="container mt-4">
         <h1 class="text-center mb-4">🤖 LLM Agent POC</h1>
-        
+
         <!-- Error Alerts -->
         <div id="alertContainer"></div>
-        
+
         <!-- Provider & Model Selection -->
         <div class="row mb-3">
             <div class="col-md-6">
@@ -33,15 +33,15 @@
             <div class="col-md-6">
                 <label for="modelSelect" class="form-label">NVIDIA Model:</label>
                 <select id="modelSelect" class="form-select">
-                    <option value="deepseek-r1">DeepSeek R1 (Recommended)</option>
-                    <option value="llama-4-maverick">Llama 4 Maverick</option>
+                    <option value="llama-4-maverick">Llama 4 Maverick (Recommended)</option>
+                    <option value="deepseek-r1">DeepSeek R1</option>
                     <option value="llama-4-scout">Llama 4 Scout</option>
                     <option value="llama-3.3">Llama 3.3 70B</option>
                     <option value="qwen-coder">Qwen 2.5 Coder</option>
                 </select>
             </div>
         </div>
-        
+
         <!-- Chat Window -->
         <div class="card mb-3">
             <div class="card-header">
@@ -60,15 +60,15 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Input -->
         <div class="input-group">
-            <input type="text" id="userInput" class="form-control" 
-                   placeholder="Ask me anything... I can search, code, or process data!" 
+            <input type="text" id="userInput" class="form-control"
+                   placeholder="Ask me anything... I can search, code, or process data!"
                    onkeypress="if(event.key==='Enter') sendMessage()">
             <button class="btn btn-primary" onclick="sendMessage()">Send</button>
         </div>
-        
+
         <!-- Enhanced Tool Status -->
         <div class="mt-3">
             <small class="text-muted">
