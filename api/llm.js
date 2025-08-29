@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 // Load API keys from environment
 const AI_PIPE_KEY = process.env.AI_PIPE_KEY;
 const AI_PROXY_KEY = process.env.AI_PROXY_KEY;
-const NVIDIA_API_KEY = "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";
+const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY || "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";
 
 // NVIDIA Model Configuration
 const NVIDIA_MODELS = {
