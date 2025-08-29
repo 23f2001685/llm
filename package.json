@@ -1,0 +1,19 @@
+{
+  "name": "llm-agent-poc",
+  "version": "1.0.0",
+  "description": "LLM Agent POC with real AI Pipe/Proxy APIs",
+  "main": "proxy_minimal.js",
+  "scripts": {
+    "start": "node proxy_minimal.js",
+    "dev": "nodemon proxy_minimal.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
