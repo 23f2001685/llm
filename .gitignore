@@ -57,9 +57,9 @@ build/
 *~
 
 # Development files (keep originals for reference)
-proxy.js
-proxy_minimal.js
-agent_minimal.js
-index_minimal.html
-*.md
-*.txt
+# proxy.js
+# proxy_minimal.js
+# agent_minimal.js
+# index_minimal.html
+# *.md
+# *.txt
