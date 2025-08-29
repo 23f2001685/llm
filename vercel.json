@@ -12,6 +12,18 @@
       "dest": "/proxy_minimal.js"
     },
     {
+      "src": "/index.html",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/agent_minimal.js",
+      "dest": "/agent_minimal.js"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/proxy_minimal.js"
     }

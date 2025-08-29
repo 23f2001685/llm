@@ -11,6 +11,11 @@ app.use(express.json());
 // Serve static files (including index.html) from the project root
 app.use(express.static(path.join(__dirname)));
 
+// Root route - explicitly serve index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 // API endpoints
 app.post('/api/llm', require('./api/llm.js'));
 app.get('/api/search', require('./api/search.js'));
