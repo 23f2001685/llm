@@ -16,6 +16,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Serve agent_minimal.js explicitly
+app.get('/agent_minimal.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'agent_minimal.js'));
+});
+
 // API endpoints
 app.post('/api/llm', require('./api/llm.js'));
 app.get('/api/search', require('./api/search.js'));
